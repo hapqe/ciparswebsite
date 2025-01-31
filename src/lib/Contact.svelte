@@ -14,7 +14,7 @@
       ><img src={mail} alt="mail icon" /> vanesa.cipar@gmail.com</a
     >
     <a href="tel:+436609769510" on:pointerenter={() => ($district -= 1)}
-      ><img src={phone} alt="phone icon" /> +43 6609769510</a
+      ><img src={phone} alt="phone icon" /> +43 660 976 9510</a
     >
     <a
       target="_blank"

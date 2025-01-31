@@ -22,12 +22,28 @@
   let color = "white";
   district.subscribe(() => {
     color = (() => {
-      let h = Math.random() * 360,
-        l = Math.random() * 30 + 40;
-      return `hsla(${(h + 180) % 360}, 100%, ${100 - l}%`;
+      const colors = [
+        "#CC2936",
+        "#23CE6B",
+        "#FFBF46",
+        "#F2E86D",
+        "#FB8F67",
+        "#6FFFE9",
+      ];
+
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      return randomColor;
     })();
-    r.style.setProperty("--color", color + ")");
-    r.style.setProperty("--color-unsaturated", color + ", .3)");
+
+    const invertedColor = `#${color
+      .slice(1)
+      .split("")
+      .map((c) => (15 - parseInt(c, 16)).toString(16))
+      .join("")}`;
+
+    r.style.setProperty("--color", color);
+    r.style.setProperty("--color-unsaturated", color);
+    r.style.setProperty("--color-inverted", invertedColor + "55");
   });
 </script>
 

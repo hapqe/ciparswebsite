@@ -28,7 +28,7 @@ h1 {
 }
 
 a:hover {
-  background: var(--color-unsaturated) !important;
+  background: var(--color-inverted) !important;
   transform: scale(1.04) !important;
 }
 
@@ -61,4 +61,18 @@ a:hover img {
 a {
   transition: 200ms;
   overflow: hidden;
+}
+
+.shadow {
+
+  -webkit-box-shadow: 0px -1px 30px 2px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0px -1px 30px 2px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px -1px 30px 2px rgba(0, 0, 0, 0.07);
+}
+
+h1,
+h2,
+h3,
+p {
+  text-shadow: 2px 0px 7px rgba(123, 123, 123, .2);
 }

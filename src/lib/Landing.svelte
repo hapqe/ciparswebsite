@@ -1,14 +1,15 @@
 <script>
+  import { fly } from "svelte/transition";
   import me from "../assets/me.png";
   import { district } from "./Vienna.svelte";
 </script>
 
 <main>
   <div>
-    <h1>
+    <h1 class="shadow" transition:fly={{ duration: 500, x: -100 }}>
       Vanesa <span class="box">Cipar</span>
     </h1>
-    <h3>
+    <h3 transition:fly={{ duration: 1000, x: -100 }}>
       Studentin in
       <a
         class="box"
@@ -29,10 +30,17 @@
         TU Wien
       </a>
     </h3>
-    <img id="me" style="width: 200px;" src={me} alt="" />
+    <img
+      transition:fly={{ duration: 1500, x: -100 }}
+      id="me"
+      class="shadow"
+      style="width: 200px;"
+      src={me}
+      alt=""
+    />
   </div>
 
-  <p>
+  <p transition:fly={{ duration: 2000, x: -100 }}>
     Willkommen auf meinem Portfolio. Hier finden Sie eine Auswahl meiner
     <span class="box light">Projekte</span> zu
     <span class="box light">Stadtplanung</span>, nachhaltiger Entwicklung und
@@ -70,6 +78,9 @@
     cursor: pointer;
     mix-blend-mode: difference;
     text-decoration: underline;
+  }
+  a:hover {
+    background-color: var(--color-unsaturated) !important;
   }
   h3 {
     width: fit-content;
