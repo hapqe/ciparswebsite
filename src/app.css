@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  background: #FCF4E4;
+}
+
+* {
+  font-family: Montserrat;
+}
+
+:root {
+  --space: 3rem;
+}
+
+h1 {
+  font-weight: 500;
+  margin-top: 0;
+  color: black;
+}
+
+.box {
+  background: white;
+  width: fit-content;
+  color: black;
+
+  padding-right: 5px;
+  padding-left: 5px;
+  background: #fafafa;
+}
+
+a:hover {
+  background: var(--color-unsaturated) !important;
+  transform: scale(1.04) !important;
+}
+
+a img {
+  transition: 100ms;
+}
+
+a:hover img {
+  animation: moveUpAndAppear 200ms ease-in-out reverse;
+}
+
+@keyframes moveUpAndAppear {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-200%);
+  }
+
+  51% {
+    transform: translateY(200%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+a {
+  transition: 200ms;
+  overflow: hidden;
+}
