@@ -6,7 +6,11 @@
 <main>
   <h1>Mein Lebenslauf</h1>
   <div>
-    <a on:pointerenter={() => ($district -= 1)} class="box" href=""
+    <a
+      download="Lebenslauf von Vanesa Cipar"
+      href="Cipar_CV.pdf"
+      on:pointerenter={() => ($district -= 1)}
+      class="box"
       ><img src={download} alt="download icon" /> Lebenslauf herunterladen</a
     >
   </div>
