@@ -15,22 +15,38 @@
     <div class="content">
       <img src="0.png" alt="" />
       <p>
-        Willkommen auf meinem Portfolio. Hier finden Sie eine Auswahl meiner
-        Projekte zu Stadtplanung, nachhaltiger Entwicklung und partizipativer
-        Gestaltung. Ich kombiniere analytische Methoden mit kreativen
-        Lösungsansätzen, um lebenswerte Räume für morgen zu schaffen.
+        Das Projekt „Favoriten zu Fuß“ widmet sich der qualitativen Aufwertung
+        eines dicht bebauten Stadtgebiets im 10. Wiener Gemeindebezirk. Anders
+        als bei einer Neuplanung steht hier nicht die Neugestaltung von
+        Brachflächen im Mittelpunkt, sondern die Aktivierung und Verbesserung
+        bestehender Infrastrukturen. Das Ziel ist ein lebendiges, durchgrüntes
+        und fußgängerfreundliches Grätzel – klimaresilient, sicher und sozial
+        vernetzt.
       </p>
     </div>
   </div>
-  <div class="project shadow">
-    <h2>Projekt XY</h2>
+  <div
+    class="project shadow"
+    on:pointerenter={() => ($district = 23)}
+    on:pointerout={() => ($district = -1)}
+  >
+    <h2>Zam' Wachsen!</h2>
     <div class="content">
       <img src="1.png" alt="" />
       <p>
-        Willkommen auf meinem Portfolio. Hier finden Sie eine Auswahl meiner
-        Projekte zu Stadtplanung, nachhaltiger Entwicklung und partizipativer
-        Gestaltung. Ich kombiniere analytische Methoden mit kreativen
-        Lösungsansätzen, um lebenswerte Räume für morgen zu schaffen.
+        ZamWachsen – Das neue Kulturherz Atzgersdorf (Universitätsprojekt TU
+        Wien) Das Projekt „ZamWachsen“ ist ein universitärer Entwurf zur
+        Umgestaltung eines Brachfelds in Atzgersdorf. Ziel ist die Schaffung
+        eines lebendigen, grünen und kulturell aktiven Stadtteils. Ein zentrales
+        „grünes Kreuz“ verbindet Wohnraum, Freiflächen und
+        Gemeinschaftseinrichtungen miteinander. Bestehende Potenziale wie
+        Grünflächen und Gewerbebauten werden integriert, während neue
+        Verbindungen und Mobilitätsangebote die Erreichbarkeit und
+        Lebensqualität im Quartier verbessern.
+        <br />
+        <br />
+
+        <a target="_blank" href="ZamWachsen.pdf">Pdf anzeigen</a>
       </p>
     </div>
   </div>
@@ -48,6 +64,9 @@
     width: 40rem;
     max-width: calc(100svw - 8rem);
     padding: 1rem;
+  }
+  .project a {
+    pointer-events: all;
   }
   .project * {
     pointer-events: none;

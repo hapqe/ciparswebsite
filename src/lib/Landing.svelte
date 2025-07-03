@@ -53,7 +53,7 @@
 <style>
   .box {
     background: white;
-    color: black;
+    color: 0000;
   }
   div * {
     mix-blend-mode: difference;
